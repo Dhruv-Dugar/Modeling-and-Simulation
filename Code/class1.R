@@ -36,18 +36,30 @@
 
 # Importing data from excel file
 
+
+
 library(readxl)
-Book1 <- read_excel("ModSim/R/Data/Coffee_domestic_consumption.xlsx")
-View(Book1)
-
-
-Book1[6:10, 4:5]
-Book1[2:10, 6:12]
-
-install.packages("writexl")
-
 library(writexl)
-new_data = Book1[1:4, 1:5]
-write_xlsx(new_data, "ModSim/R/Data/New_data.xlsx")
+
+# this is how we import a dataset from excel to a matrix in R
+data_final <- read_excel("ModSim/R/Data/Coffee_domestic_consumption.xlsx")
+
+# to view a Data Set
+View(data_final)
+
+# data_final[6:10, 4:5]
+# data_final[2:10, 6:12]
+
+# extract a portion of the data, just for our convienence for training the dataset
+
+data_training = data_final[1:30, ]
+write_xlsx(data_training, "ModSim/R/Data/New_data.xlsx")
+
+
+# there is a pairs function which we can run on a data frame 
+# it will correlate  graphs between all variable pairs
+
+# there is a cor function as well, which lists the correlation factor (r)
+# and tells the correlation factor among the variables
 
 
