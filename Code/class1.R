@@ -21,4 +21,16 @@ m = matrix(c(1,2,3, 11, 12, 13),
            )
 
 
+# common statistical terms, and their usage on a vector
+hist(a)
+boxplot(a)
+mean(a)
+median(a)
+sd(a)
+
+# Regression analysis
+
+model1 = lm(b~a)
+anova(model1)
+
 
