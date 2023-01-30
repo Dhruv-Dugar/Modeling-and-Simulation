@@ -72,6 +72,26 @@
 # 
 # 
 # model = lm(data_training$`1990/91` ~ data_training$`2019/20`)
+# 
+# expt_no = c(1:6)
+
+timeTaken = c (0.1, 0.2, 0.1, 0.5, 0.02, 0.06)
+
+temperature = c(100,100,200,200,300,300)
+
+concentration = c(0.98, 0.983, 0.544, 0.225, 0.566, 0.034)
+
+data = cbind(timeTaken, temperature, concentration)
+dim(data)
+summary(data)
+pairs(data)
+cor(data)
+
+data[,1:2]
+
+data[,1,3]
 
 
-
+model1 = lm(temperature~concentration + timeTaken)
+summary(model1)
+predict.lm(model1)
