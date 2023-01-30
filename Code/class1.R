@@ -36,30 +36,42 @@
 
 # Importing data from excel file
 
+# 27 January 2023
 
+# library(readxl)
+# library(writexl)
+# 
+# # this is how we import a dataset from excel to a matrix in R
+# data_final <- read_excel("ModSim/R/Data/Coffee_domestic_consumption.xlsx")
+# 
+# # to view a Data Set
+# View(data_final)
+# 
+# # data_final[6:10, 4:5]
+# # data_final[2:10, 6:12]
+# 
+# # extract a portion of the data, just for our convienence for training the dataset
+# 
+# data_training = data_final[1:30, ]
+# write_xlsx(data_training, "ModSim/R/Data/New_data.xlsx")
+# 
+# # there is a pairs function which we can run on a data frame 
+# # it will correlate  graphs between all variable pairs
+# 
+# # there is a cor function as well, which lists the correlation factor (r)
+# # and tells the correlation factor among the variables
+# 
+# 
+# mean(data_training$`1990/91`)
+# 
+# 
+# # the 1990-91 data is the x axis, and the total domestic consumption 
+# # will be the y axis
+# plot(data_training$`1990/91`, data_training$Total_domestic_consumption, xlab = "1990 - 91", ylab = "Total Domestic Consumption")
+# 
+# 
+# 
+# model = lm(data_training$`1990/91` ~ data_training$`2019/20`)
 
-library(readxl)
-library(writexl)
-
-# this is how we import a dataset from excel to a matrix in R
-data_final <- read_excel("ModSim/R/Data/Coffee_domestic_consumption.xlsx")
-
-# to view a Data Set
-View(data_final)
-
-# data_final[6:10, 4:5]
-# data_final[2:10, 6:12]
-
-# extract a portion of the data, just for our convienence for training the dataset
-
-data_training = data_final[1:30, ]
-write_xlsx(data_training, "ModSim/R/Data/New_data.xlsx")
-
-
-# there is a pairs function which we can run on a data frame 
-# it will correlate  graphs between all variable pairs
-
-# there is a cor function as well, which lists the correlation factor (r)
-# and tells the correlation factor among the variables
 
 
