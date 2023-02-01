@@ -92,6 +92,11 @@ data[,1:2]
 data[,1,3]
 
 
-model1 = lm(temperature~concentration + timeTaken)
+model1 = lm(concentration~temperature + timeTaken)
 summary(model1)
-predict.lm(model1)
+concentrationPredicted = predict.lm(model1)
+
+# to get the coefficients for the multivariable regression
+coef(model1)
+
+
