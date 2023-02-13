@@ -29,9 +29,9 @@ We then analyse what are the number of equations and variables, and then we can 
 ## Degree Of Freedom = M - N
 
 If <br>
-1. Number of variables > Number of equations -> Under Specified <br>
-2. Number of variables = Number of equations -> Well Specified <br>
-3. Number of variables < Number of equations -> Over Specified <br>
+&nbsp; 1. Number of variables > Number of equations -> Under Specified <br>
+&nbsp; 2. Number of variables = Number of equations -> Well Specified <br>
+&nbsp; 3. Number of variables < Number of equations -> Over Specified <br>
 
 $$ Question - 1:  DOF Analysis$$
 
@@ -61,7 +61,7 @@ Where, U is the internal energy, Q is the heat transfer, W is the work done.
 So, we only deal with the energy balance equation, and the mass balance equation, and there is practically nothing which is an isolated system.
 
 
-![](Notes%20Assets/IMG_2658.jpeg)
+![](../Notes%20Assets/IMG_2658.jpeg)
 
 If there is any variable which is not constant with time -> It means the system is an unsteady state. If there is a change in either of the variables with time, it is an unsteady state.
 
@@ -80,7 +80,7 @@ Example: Newton's Law of Viscosity (this is also steady state fluid flow)
 $$ τ = - μ\frac{dV}{dx} $$
 
 
-``` RULE OF THUMB: If there is a change in any variable with time, it is an unsteady state. If there is no change in any variable with time, it is a steady state. ```
+` RULE OF THUMB: If there is a change in any variable with time, it is an unsteady state. If there is no change in any variable with time, it is a steady state. `
 
 
 # Lumped v/s Distributed Model
@@ -90,6 +90,8 @@ $$ τ = - μ\frac{dV}{dx} $$
  - There is no change with respect to space in x, y, z
 - There will be a set of Ordinary Differential Equations (ODEs) which will be solved to get the solution
 
+
+`Example: Mass Flow Rate: `
 $$ \frac{d(ρV)}{dt} = ρ_fF_f - ρ_iF_i $$
 
 - No spatial variation in temperature, pressure and concentration, only with time
@@ -100,7 +102,9 @@ $$ \frac{d(ρV)}{dt} = ρ_fF_f - ρ_iF_i $$
 - Very fucked system of equations, with a lot of variables, and a lot of equations, and partial differential equations (PDEs) are used to solve the system of equations. Solving such systems is very difficult in these cases.
 - Both time and spatial variation in flows and states (temperature/pressure and concentration)
 
-$$ \frac{d^2V}{dt^2} = - \frac{1}{ρ} \frac{\partial P}{\partial x} + \frac{1}{ρ} \frac{\partial μ}{\partial x} \frac{dV}{dx} $$
+
+` Example: Navier Stokes Equation: `
+$$ \frac{\partial ρ}{\partial t} + \frac{\partial (ρV)}{\partial x}  + \frac{\partial (ρV)}{\partial y} + \frac{\partial (ρV)}{\partial z} = 0$$
 
 Steps involved in Modelling and Simulation
 
