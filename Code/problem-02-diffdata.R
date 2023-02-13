@@ -1,3 +1,5 @@
+
+
 time = c(Recycled_PVC_Data$Time)
 temp = c(Recycled_PVC_Data$Temp)
 tga = c(Recycled_PVC_Data$TGA)
