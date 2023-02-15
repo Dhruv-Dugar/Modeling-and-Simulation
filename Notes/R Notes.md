@@ -78,7 +78,43 @@ Output:
 - Mean
     - mean(a)
 
+- Median
+    - median(a)
 
+- Standard Deviation
+    - sd(a)
+
+## Regression Analysis
+
+- Linear Regression
+    - model1 = lm(a~b)
+
+Now to analyse the mdoel, we use the function anova/summary
+
+- anova(model1)
+- summary(model1)
+
+
+
+## Importing data from excel
+
+```{r}
+library(readxl)
+Chernobyl_Chemical_Radiation <- read_excel("ModSim/R/Data/Chernobyl_ Chemical_Radiation.xlsx")
+View(Chernobyl_Chemical_Radiation)
+```
+
+(there is a method to do it via GUI, just click on the Import dataset icon, from Excel, and then select the file)
+
+
+To view the imported data
+
+- View(Chernobyl_Chemical_Radiation)
+
+
+To view specific portion of the data
+
+- View(Chernobyl_Chemical_Radiation[1:10,1:5])
 
 
 

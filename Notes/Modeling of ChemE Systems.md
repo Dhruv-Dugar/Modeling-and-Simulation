@@ -115,3 +115,63 @@ Steps involved in Modelling and Simulation
 <br><br>
 
 > Written by Dhruv Dugar on 13/02/2023
+
+# Fundamental Modelling
+
+```mermaid
+graph TD
+    A[Balance Equation] -->B{Mass/Energy/Force}
+    B -->|One| D[Open System]
+    B -->|Two| E[Closed System]
+```
+
+## Balance Equation
+
+$$ in - out + generation - consumption = accumulation $$
+
+```
+Problem Statement 2
+The reaction happens in a contionus stirred tank reactor which can be observed below. Two streams are feeding the reactor. The feed stream has a volumetric feed rate F1 (m^3/s) and concentration CB1, the second stream is a dilute stream with flow rate F2 and concentration CB2. The effulent has flow rate F0 and concentration CB. The reactant is assumed to be in excess thus is not involved in the reaction rate. Carry oyt the mass balance for the CSTR followed by the DOF analysis.
+```
+<img src = "../Notes%20Assets/IMG_2690.jpeg" height = 300px, width = 300px>
+
+
+
+
+- Component Balance 
+
+$$
+\frac{dVC_B}{dt} = F_1C_{B1} + F_2C_{B2} - F_0C_{B0} \\
+$$
+- Degree of Freedom Analysis
+    - Number of Equations = 1
+    - Number of Variables = 3 (V, F_0, C_B)
+- DOF = 3 - 1 = 2
+
+The System is under specified.
+Need to find more equations.
+
+
+- Overall Mass Balance
+
+$$
+\frac{d(Ah)}{dt} = F_1 + F_2 - F_0 \\
+$$
+
+- Now number of equations is 2, DOF is still 1
+
+There is a valve in the end, and that means the final flow rate is a function of the height of the holdup in the tank
+
+
+$$
+F_0 = \alpha h \\
+$$
+
+Now we have 3 equations, and 3 variables. The degree of freedom is now 0. The system is now well specified.
+
+
+
+
+
+
+> Written by Dhruv Dugar on 15/02/2023
