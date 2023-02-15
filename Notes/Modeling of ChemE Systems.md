@@ -36,7 +36,9 @@ If <br>
 $$ Question - 1:  DOF Analysis$$
 
 
-```Consider the perfectly mixed storage tank shown below. A liquid stream with volumetric rate F1 and densite ρ1 flows into the tank. The outlet stream has volumetric flow rate F0, and densite ρ0. Our objective is to develop a mathematical model for the variation of the tank holdip that is the volume (V) of the fluid in the system. Carry out the degree of freedom analysis for the system.```
+```
+Consider the perfectly mixed storage tank shown below. A liquid stream with volumetric rate F1 and densite ρ1 flows into the tank. The outlet stream has volumetric flow rate F0, and densite ρ0. Our objective is to develop a mathematical model for the variation of the tank holdip that is the volume (V) of the fluid in the system. Carry out the degree of freedom analysis for the system.
+```
 
 (to be solved later)
 
@@ -121,8 +123,8 @@ Steps involved in Modelling and Simulation
 ```mermaid
 graph TD
     A[Balance Equation] -->B{Mass/Energy/Force}
-    B -->|One| D[Open System]
-    B -->|Two| E[Closed System]
+    B --> D[Open System]
+    B --> E[Closed System]
 ```
 
 ## Balance Equation
@@ -130,13 +132,12 @@ graph TD
 $$ in - out + generation - consumption = accumulation $$
 
 ```
-Problem Statement 2
+# Problem Statement 2
 The reaction happens in a contionus stirred tank reactor which can be observed below. Two streams are feeding the reactor. The feed stream has a volumetric feed rate F1 (m^3/s) and concentration CB1, the second stream is a dilute stream with flow rate F2 and concentration CB2. The effulent has flow rate F0 and concentration CB. The reactant is assumed to be in excess thus is not involved in the reaction rate. Carry oyt the mass balance for the CSTR followed by the DOF analysis.
 ```
 <img src = "../Notes%20Assets/IMG_2690.jpeg" height = 300px, width = 300px>
 
-
-
+## Solution: 
 
 - Component Balance 
 
