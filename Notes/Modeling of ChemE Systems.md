@@ -170,9 +170,37 @@ $$
 
 Now we have 3 equations, and 3 variables. The degree of freedom is now 0. The system is now well specified.
 
-
-
-
-
-
 > Written by Dhruv Dugar on 15/02/2023
+
+# Lumped Models
+
+```mermaid
+graph TD
+    A{Time Variation} --> D[CSTR/Open/PFR]
+    A --> E[Closed System/Batch Reactor]
+```
+
+
+-> Mass Balance
+-> Energy Balance
+
+
+## Closed System (Batch)
+
+Case 1 (NO REACTION):
+
+- nothing is coming in, nothing is going out
+
+Overall Mass Balance:
+
+$$ in - out + generation - consumption = accumulation $$
+
+There is no input, output, generation, consumption, or even accumulation.
+
+$$ 0 = 0 $$
+
+Case 2 (REACTION):
+
+
+
+> Written by Dhruv Dugar on 20/02/2023
