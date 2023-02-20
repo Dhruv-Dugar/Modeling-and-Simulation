@@ -201,6 +201,52 @@ $$ 0 = 0 $$
 
 Case 2 (REACTION):
 
+- Same tank
+- No input, no output
+- Volume V, Mass m
+
+$$ A -> B $$
+$$ -r_A = kC_A $$
+
+Writing the overall mass balance equation
+
+Assuming constant volume:
+$$ 0 - 0 - (r_A)(V) = \frac{dC_A}{dt}V $$
+
+$$ -r_AV = \frac{dN_A}{dt} $$
+
+
+$$ N_A = N_0(1-X_A) \\ \text(where  X_A  is the selectivity)$$
+
+$$ -r_AV = N_A0 \frac{dX_A}{dt} $$
+
+
+For non constant volume:
+
+$$ 0 - 0 + (r_A)(V) = \frac{dC_A}{dt}V + \frac{dV}{dt}C_A$$
+
+
+# Open System :- 
+
+Case 1:- CSTR
+
+- Initial Value Problem
+
+<img src = "../Notes%20Assets/Image 7.jpeg" height = 300px, width = 300px>
+
+$$\text(eq 1) \\ \frac{dV}{dt} = F_f - F_0 $$ 
+
+$$ F_fC_{Af} - F_0C_A - r_AV = d(VC_A)/dt $$
+
+$$ \text(eq 2) \\F_fC_{Af} - F_0C_A - r_AV = \frac{dV}{dt}C_A + \frac{dC_A}{dt}V $$
+
+
+Solving eq1 and eq2
+
+$$ V \frac{dC_A}{dt} = F_f(C_{Af}- C_A) - r_AV $$
+
+
+
 
 
 > Written by Dhruv Dugar on 20/02/2023
