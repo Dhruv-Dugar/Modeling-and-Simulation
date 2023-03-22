@@ -42,8 +42,11 @@ anova(model)
 predict.lm(model)
 
 plot(data$RH, predict.lm(model))
-
 coef(model)
 
 rmse(predict.lm(model), data$RH)
 mape(predict.lm(model), data$RH)
+
+# Similary we can make a non linear model provided we have the data about
+# the coefficients and what power and functions
+# are to be used in making the model
