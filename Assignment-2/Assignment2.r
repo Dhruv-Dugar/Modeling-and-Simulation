@@ -1,6 +1,6 @@
 library(readxl)
 library(Metrics)
-data <- read_excel("AirQualityUCI_cleaned.xlsx")
+data <- read_excel("ModSim/R/Assignment-2/AirQualityUCI_cleaned.xlsx")
 View(data)
 
 dim(data)
