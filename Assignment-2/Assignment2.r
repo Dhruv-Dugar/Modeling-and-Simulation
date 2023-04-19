@@ -41,7 +41,7 @@ anova(model)
 
 predict.lm(model)
 
-plot(data$PT08_S3_NOX, predict.lm(model))
+plot(data$PT08_S3_NOX, predict.lm(model), xlab = "Actual Data", ylab = "Predicted Data")
 coef(model)
 
 rmse(predict.lm(model), data$PT08_S3_NOX)
