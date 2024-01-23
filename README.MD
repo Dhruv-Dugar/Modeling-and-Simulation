@@ -1,3 +1,5 @@
+## <p align="center">Star this repository</p>
+
 ## How to use this Repository
 
 1. Code <br>
