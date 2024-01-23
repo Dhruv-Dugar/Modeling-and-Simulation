@@ -1,4 +1,4 @@
-## <p align="center">Star this repository</p>
+## <p align="center">⭐️⭐️ Star this repository ⭐️⭐️</p>
 
 ## How to use this Repository
 
